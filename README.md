@@ -1,6 +1,6 @@
 ### Hi there 👋
-- 😒 C++, C#, Java, ASP.NET, PHP
-- 💖 JavaScript, SCSS
+😒 C++, C#, Java, ASP.NET, PHP
+💖 JavaScript, SCSS
 
 <!--
 **sooyongjie/sooyongjie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
