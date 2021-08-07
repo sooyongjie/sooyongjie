@@ -10,7 +10,7 @@ aboutMeBtn.addEventListener("click", () => {
 let triggerVal;
 const setTriggerValue = () => {
   if (window.innerHeight > 1000) triggerVal = window.innerHeight * 0.6;
-  else triggerVal = window.innerHeight * 0.7;
+  else triggerVal = window.innerHeight * 0.65;
 };
 
 formBtn.addEventListener("click", () => {
