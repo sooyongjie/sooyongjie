@@ -3,6 +3,10 @@ $lighterblue: #2b3750;
 $lighterorange: #e2920f;
 
 .dark-theme {
+  &:-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgba(226, 146, 15, 0.9);
+  }
   color: $dt-white;
   background: $darkblue;
   nav {
@@ -10,7 +14,7 @@ $lighterorange: #e2920f;
       color: #e4e0d8;
     }
     hr {
-    border-color: #cdc9c2;
+      border-color: #cdc9c2;
     }
   }
   p {

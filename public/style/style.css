@@ -821,6 +821,11 @@ nav img {
   background: #14213d;
 }
 
+.dark-theme:-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(226, 146, 15, 0.9);
+}
+
 .dark-theme nav .nav-icons a i {
   color: #e4e0d8;
 }
