@@ -1,3 +1,8 @@
+/**
+ * ! WARNING !
+ * Ugly code ahead. You have been warned.
+ */
+
 const aboutMeBtn = document.querySelector(".about-me-btn");
 const skills = document.querySelectorAll(".accent");
 const formBtn = document.querySelector(".form-btn");
@@ -9,8 +14,8 @@ aboutMeBtn.addEventListener("click", () => {
 
 let triggerVal;
 const setTriggerValue = () => {
-  if (window.innerHeight > 1000) triggerVal = window.innerHeight * 0.6;
-  else triggerVal = window.innerHeight * 0.65;
+  if (window.innerHeight > 1000) triggerVal = window.innerHeight * 0.7;
+  else triggerVal = window.innerHeight * 0.75;
 };
 
 formBtn.addEventListener("click", () => {
@@ -55,6 +60,7 @@ gsap.to(".about-me", {
     trigger: ".about-me",
   },
   duration: 0.7,
+  delay: 0.2,
   opacity: 1,
 });
 
@@ -69,6 +75,7 @@ sections.forEach((section) => {
     y: 0,
     duration: 0.5,
     opacity: 1,
+    delay: 0.2,
   });
 });
 
@@ -82,6 +89,7 @@ gsap.to(".ratings", {
   },
   y: 0,
   duration: 0.5,
+  delay: 0.2,
   opacity: 1,
 });
 
@@ -102,12 +110,11 @@ projects.forEach((project) => {
 var skip = document.querySelector(".skip-btn");
 
 skip.addEventListener("click", skipProject);
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-  scrollFunction();
+  scrollToBottom();
 };
 
-function scrollFunction() {
+function scrollToBottom() {
   if (
     document.body.scrollTop > 4000 ||
     document.documentElement.scrollTop > 4000
@@ -123,11 +130,8 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function skipProject() {
   document.querySelector(".contact-me").scrollIntoView({ behavior: "smooth" });
-  // document.body.scrollTop = 7000; // For Safari
-  // document.documentElement.scrollTop = 7000; // For Chrome, Firefox, IE and Opera
 }
 
 const tags = document.querySelectorAll(".tag");
