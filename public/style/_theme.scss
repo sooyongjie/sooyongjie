@@ -73,6 +73,10 @@ $lighterorange: #e2920f;
   }
   button.form-btn {
     background: $lighterblue !important;
+    border-color: #2b3750;
+    &:hover, &:focus {
+      border-color: $lighterorange;
+    }
   }
 
   p.i-am,
