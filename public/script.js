@@ -1,6 +1,7 @@
 /**
  * ! WARNING !
  * Ugly code ahead. You have been warned.
+ * The code was written. So far no effort has been put to clean up the junk, yet.
  */
 
 const aboutMeBtn = document.querySelector(".about-me-btn");
@@ -46,6 +47,7 @@ const loadRatings = () => {
   }, 200);
 };
 
+// set value where the animation should play
 setTriggerValue();
 
 window.addEventListener("resize", () => {
@@ -89,7 +91,6 @@ gsap.to(".ratings", {
   },
   y: 0,
   duration: 0.5,
-  delay: 0.2,
   opacity: 1,
 });
 
