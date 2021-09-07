@@ -33,6 +33,8 @@ let arr = [
   document.querySelector(".programming-skills"),
 ];
 
+// gsap ain't too good for scroll animations as it turns out
+
 const loadRatings = () => {
   gsap.to(arr, {
     stagger: 0.5,
@@ -108,14 +110,10 @@ projects.forEach((project) => {
   });
 });
 
+// skip project button
 var skip = document.querySelector(".skip-btn");
 
-skip.addEventListener("click", skipProject);
 window.onscroll = function () {
-  scrollToBottom();
-};
-
-function scrollToBottom() {
   if (
     document.body.scrollTop > 4000 ||
     document.documentElement.scrollTop > 4000
@@ -129,12 +127,13 @@ function scrollToBottom() {
   } else {
     skip.classList.remove("show");
   }
-}
+};
 
-function skipProject() {
+skip.addEventListener("click", () => {
   document.querySelector(".contact-me").scrollIntoView({ behavior: "smooth" });
-}
+});
 
+// adds href for each tags so you don't need to search for the tools, libraries, etc manually
 const tags = document.querySelectorAll(".tag");
 tags.forEach((tag) => {
   tag.href = `https://www.google.com/search?q=${tag.textContent}`;
