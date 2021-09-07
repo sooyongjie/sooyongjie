@@ -149,24 +149,50 @@ nav img {
   line-height: 28px;
 }
 
-.intro button.about-me-btn {
-  margin-top: 36px;
+.intro .buttons {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 24px;
+}
+
+.intro .buttons button,
+.intro .buttons a {
   display: grid;
   grid-template-columns: max-content max-content;
-  column-gap: 8px;
-  align-items: center;
+  align-items: baseline;
+  align-content: center;
+  justify-content: center;
   text-decoration: none;
 }
 
-.intro button.about-me-btn,
-.intro button.about-me-btn span {
+.intro .buttons button,
+.intro .buttons button span,
+.intro .buttons a,
+.intro .buttons a span {
   font-size: 16px;
   color: #fca311;
 }
 
-.intro button span,
-.intro i {
+.intro .buttons span,
+.intro .buttons i {
   font-weight: 500;
+}
+
+.intro .buttons button.about-me-btn {
+  column-gap: 8px;
+}
+
+.intro .buttons a.resume-btn {
+  padding: 12px 16px;
+  column-gap: 12px;
+  border-radius: 8px;
+  border: 1px solid #fca311;
+  transition: 0.1s ease-in-out;
+}
+
+.intro .buttons a.resume-btn:hover, .intro .buttons a.resume-btn:focus {
+  background: #fef8ee;
 }
 
 .ratings,
@@ -311,6 +337,7 @@ nav img {
 }
 
 .image img {
+  width: 100%;
   max-width: 800px;
   border: 1px solid #ddd;
   transition: 0.15s ease-in-out;
@@ -407,8 +434,13 @@ nav img {
   align-items: center;
   align-self: center;
   background: #fff3e0;
-  border: none;
+  border: 1px solid #fff3e0;
   border-radius: 8px;
+  transition: 0.1s ease-in-out;
+}
+
+.contact-form button:hover, .contact-form button:focus {
+  border: 1px solid #fca311;
 }
 
 .contact-form button i,
@@ -642,16 +674,16 @@ nav img {
     transform: scale(1);
   }
   33% {
-    transform: scale(1.15);
+    transform: scale(1.3);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 
 @keyframes boop {
   0% {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -898,6 +930,11 @@ nav img {
 
 .dark-theme button.form-btn {
   background: #2b3750 !important;
+  border-color: #2b3750;
+}
+
+.dark-theme button.form-btn:hover, .dark-theme button.form-btn:focus {
+  border-color: #e2920f;
 }
 
 .dark-theme p.i-am,
