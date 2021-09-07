@@ -70,22 +70,43 @@
     color: #444;
     line-height: 28px;
   }
-  button.about-me-btn {
-    margin-top: 36px;
+  .buttons {
+    margin-top: 48px;
     display: grid;
-    grid-template-columns: max-content max-content;
-    column-gap: 8px;
-    align-items: center;
-    text-decoration: none;
-    &,
-    span {
-      font-size: 16px;
-      color: $orange;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 24px;
+    button,
+    a {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      align-items: baseline;
+      align-content: center;
+      justify-content: center;
+      text-decoration: none;
+      &,
+      span {
+        font-size: 16px;
+        color: $orange;
+      }
     }
-  }
-  button span,
-  i {
-    font-weight: 500;
+    span,
+    i {
+      font-weight: 500;
+    }
+    button.about-me-btn {
+      column-gap: 8px;
+    }
+    a.resume-btn {
+      padding: 12px 16px;
+      column-gap: 12px;
+      border-radius: 8px;
+      border: 1px solid $orange;
+      transition: 0.1s ease-in-out;
+      &:hover,
+      &:focus {
+        background: #fef8ee;
+      }
+    }
   }
 }
 
@@ -214,6 +235,7 @@
     }
   }
   img {
+    width: 100%;
     max-width: 800px;
     border: 1px solid #ddd;
     transition: 0.15s ease-in-out;
@@ -300,8 +322,13 @@
     align-items: center;
     align-self: center;
     background: #fff3e0;
-    border: none;
+    border: 1px solid #fff3e0;
     border-radius: 8px;
+    transition: 0.1s ease-in-out;
+    &:hover,
+    &:focus {
+      border: 1px solid $orange;
+    }
     i,
     span {
       color: $orange;
