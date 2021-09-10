@@ -3,7 +3,7 @@
 
 💖 JavaScript
 
-[My Portfolio](https://sooyongjie.web.app/)
+`[My Portfolio](https://sooyongjie.web.app/)`
 ![Screenshot](public/img/sooyongjie.png)
 <!--
 **sooyongjie/sooyongjie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
