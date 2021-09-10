@@ -1,7 +1,9 @@
 ## I ❤ WEB DEVELOPMENT
-######😒 C++, C#, Java, ASP.NET, PHP
+
+😒 C++, C#, Java, ASP.NET, PHP
 
 💖 JavaScript
+
 
 [My Portfolio](https://sooyongjie.web.app/)
 
