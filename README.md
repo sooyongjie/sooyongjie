@@ -5,7 +5,7 @@
 💖 JavaScript
 
 
-[My Portfolio](https://bit.ly/sooyongjie/)
+[My Portfolio](https://bit.ly/sooyongjie)
 
 ![Screenshot](public/img/sooyongjie.png)
 <!--
