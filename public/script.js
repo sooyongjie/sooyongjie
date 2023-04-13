@@ -26,7 +26,7 @@ formBtn.addEventListener("click", () => {
   }, 600);
 });
 
-const skillRatings = [85, 95, 75, 96, 90, 75, 20, 85];
+const skillRatings = [90, 95, 85, 95, 95, 80, 50, 90];
 
 let arr = [
   document.querySelector(".soft-skills"),
@@ -96,7 +96,7 @@ gsap.to(".ratings", {
   opacity: 1,
 });
 
-const projects = [".inti", ".adt", ".tbinfo", ".adictionary"];
+const projects = [".villagerscout", ".makethingshappen", ".inti", ".adt", ".tbinfo", ".adictionary"];
 
 projects.forEach((project) => {
   gsap.to(project, {
